@@ -2750,6 +2750,8 @@ body.page-products .site-footer a:hover {
   pointer-events: none;
   transition: opacity 0.5s ease, visibility 0.5s ease;
   cursor: zoom-in;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 .carousel-slide.active {
@@ -2771,7 +2773,8 @@ body.page-products .site-footer a:hover {
 .carousel-slide video {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center center;
   border-radius: 12px;
   background: #06131c;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
