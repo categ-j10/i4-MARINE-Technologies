@@ -3103,7 +3103,7 @@ body.page-products .site-footer a:hover {
 
   .tree-diagram-wrap {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 28px minmax(115px, 160px) 28px minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) 22px minmax(160px, 210px) 22px minmax(0, 1fr);
     align-items: center;
   }
 
@@ -3159,15 +3159,32 @@ body.page-products .site-footer a:hover {
   }
 
   .tree-image-container {
-    max-width: 160px;
+    aspect-ratio: 9 / 16;
+    max-width: 210px;
+    border-radius: 16px;
+    padding: 6px;
+  }
+
+  .carousel-slide video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
     border-radius: 12px;
-    padding: 8px;
+  }
+
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 4px;
+    transform: scale(1.12);
   }
 
   .carousel-btn {
-    width: 24px;
-    height: 24px;
-    font-size: 10px;
+    width: 26px;
+    height: 26px;
+    font-size: 11px;
   }
 
   .carousel-btn.prev {
@@ -3179,14 +3196,14 @@ body.page-products .site-footer a:hover {
   }
 
   .carousel-dots {
-    bottom: 4px;
-    padding: 2px 6px;
+    bottom: 8px;
+    padding: 3px 7px;
     gap: 4px;
   }
 
   .video-fs-btn {
-    top: 6px;
-    right: 6px;
+    top: 8px;
+    right: 8px;
     padding: 3px 8px;
     font-size: 8.5px;
     gap: 4px;
@@ -3219,7 +3236,7 @@ body.page-products .site-footer a:hover {
 
   .tree-diagram-wrap {
     display: grid;
-    grid-template-columns: minmax(110px, 1fr) 18px minmax(80px, 110px) 18px minmax(110px, 1fr);
+    grid-template-columns: minmax(95px, 1fr) 12px minmax(135px, 170px) 12px minmax(95px, 1fr);
     align-items: center;
   }
 
@@ -3277,34 +3294,40 @@ body.page-products .site-footer a:hover {
   }
 
   .tree-image-container {
-    max-width: 110px;
-    border-radius: 10px;
-    padding: 6px;
+    aspect-ratio: 9 / 16;
+    max-width: 165px;
+    border-radius: 14px;
+    padding: 5px;
+  }
+
+  .carousel-slide img {
+    transform: scale(1.15);
+    padding: 2px;
   }
 
   .carousel-btn {
-    width: 18px;
-    height: 18px;
-    font-size: 8px;
+    width: 22px;
+    height: 22px;
+    font-size: 9px;
   }
 
   .carousel-btn.prev {
-    left: 2px;
+    left: 3px;
   }
 
   .carousel-btn.next {
-    right: 2px;
+    right: 3px;
   }
 
   .carousel-dots {
-    bottom: 2px;
-    padding: 1px 4px;
+    bottom: 6px;
+    padding: 2px 5px;
     gap: 3px;
   }
 
   .video-fs-btn {
-    top: 4px;
-    right: 4px;
+    top: 6px;
+    right: 6px;
     padding: 4px;
     border-radius: 50%;
   }
@@ -3335,7 +3358,7 @@ body.page-products .site-footer a:hover {
 
 @media (max-width: 360px) {
   .tree-diagram-wrap {
-    grid-template-columns: minmax(95px, 1fr) 14px minmax(65px, 85px) 14px minmax(95px, 1fr);
+    grid-template-columns: minmax(85px, 1fr) 8px minmax(115px, 138px) 8px minmax(85px, 1fr);
   }
 
   .tree-spec-card {
@@ -3352,8 +3375,10 @@ body.page-products .site-footer a:hover {
   }
 
   .tree-image-container {
-    max-width: 85px;
+    aspect-ratio: 9 / 16;
+    max-width: 138px;
     padding: 4px;
+    border-radius: 12px;
   }
 }
 
