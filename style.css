@@ -2922,38 +2922,61 @@ body.page-products .site-footer a:hover {
   background: #ffffff;
   border: 1px solid #dce6eb;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
-  border-radius: 10px;
+  border-radius: 12px;
   overflow-x: auto;
   max-width: 1100px;
   margin: 45px auto 0;
   scrollbar-width: thin;
 }
 
+.spec-table-wrap .subgroup-header {
+  padding: 22px 24px 18px;
+  margin: 0;
+  border-bottom: 1px solid #e8eff2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.spec-table-wrap .subgroup-kicker,
+.subgroup-header .subgroup-kicker,
 .subgroup-kicker {
-  color: #007782;
+  color: #007782 !important;
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 10.5px;
   letter-spacing: 0.14em;
   font-weight: 700;
   display: block;
 }
 
+.spec-table-wrap .subgroup-title,
+.spec-table-wrap .subgroup-header h3,
+.spec-table-wrap h3.subgroup-title,
+.subgroup-header h3.subgroup-title,
 .subgroup-title {
-  color: #06131c;
-  font-size: 18px;
-  font-weight: 700;
-  margin: 4px 0 0;
+  color: #082231 !important;
+  font-size: clamp(18px, 2.2vw, 24px) !important;
+  font-weight: 800 !important;
+  margin: 4px 0 0 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.25 !important;
 }
 
+.spec-table-wrap .subgroup-badge,
+.spec-table-wrap .subgroup-header .subgroup-badge,
+.subgroup-header span.subgroup-badge,
 .subgroup-badge {
   background: #e3f5f6;
   border: 1px solid #b2e4e6;
-  color: #00606b;
+  color: #00606b !important;
   font-family: var(--mono);
-  font-size: 10px;
-  padding: 4px 10px;
+  font-size: 10.5px;
+  padding: 5px 12px;
   border-radius: 100px;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.06em;
 }
 
 .spec-table {
@@ -3222,11 +3245,20 @@ body.page-products .site-footer a:hover {
   .carousel-dot.active {
     width: 12px;
   }
+
+  .spec-table-wrap .subgroup-header {
+    padding: 16px 16px 14px;
+    gap: 10px;
+  }
 }
 
 @media (max-width: 480px) {
   body.page-products .showcase-section {
     padding: 36px 4px;
+  }
+
+  .spec-table-wrap .subgroup-header {
+    padding: 14px 12px 12px;
   }
 
   .tree-product-block {
